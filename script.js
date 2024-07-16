@@ -20,9 +20,8 @@ function init() {
     controls.maxDistance = 5; // Set the maximum zoom distance
 
     // Add ambient light
-const pointLight = new THREE.PointLight(0xffffff, 1, 100);
-pointLight.position.set(2, 2, 2);
-scene.add(pointLight);
+   const ambientLight = new THREE.AmbientLight(0xFFFDC7, 3);
+    scene.add(ambientLight);
 
 
     // Load the 3D model
