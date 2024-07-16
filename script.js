@@ -25,7 +25,7 @@ function init() {
 
     // Load the 3D model
     const loader = new THREE.GLTFLoader();
-    loader.load('skull.glb', function (gltf) {
+    loader.load('skull02.glb', function (gltf) {
         scene.add(gltf.scene);
         console.log('Model loaded successfully');
     }, undefined, function (error) {
