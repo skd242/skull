@@ -10,17 +10,17 @@ function init() {
 
     // Create renderer
     renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-    renderer.setClearColor(0xffffff, 0); // Set background color to white and make it transparent
+    renderer.setClearColor(0xffffff, 0); 
     renderer.setSize(window.innerWidth, window.innerHeight);
     document.getElementById('3d-container').appendChild(renderer.domElement);
 
     // Add orbit controls
     controls = new THREE.OrbitControls(camera, renderer.domElement);
-    controls.minDistance = 1; // Set the minimum zoom distance
-    controls.maxDistance = 5; // Set the maximum zoom distance
+    controls.minDistance = 0; // Set the minimum zoom distance
+    controls.maxDistance = 8; // Set the maximum zoom distance
 
     // Add ambient light
-   const ambientLight = new THREE.AmbientLight(0xEBF6FF, 1.0);
+   const ambientLight = new THREE.AmbientLight(0xEBF6FF, 2.0);
     scene.add(ambientLight);
 
 
